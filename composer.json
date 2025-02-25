@@ -34,10 +34,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lenius\\PassGeneratorServiceProvider"
+                "Thenextweb\\PassGeneratorServiceProvider"
             ],
             "aliases": {
-                "PassGenerator": "Lenius\\Facades\\PassGenerator"
+                "PassGenerator": "Thenextweb\\Facades\\PassGenerator"
             }
         }
     },
