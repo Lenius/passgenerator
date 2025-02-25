@@ -1,5 +1,5 @@
 {
-    "name": "thenextweb/passgenerator",
+    "name": "lenius/passgenerator",
     "description": "A Laravel package to create Apple Wallet (old Passbook) compatible tickets.",
     "type": "library",
     "license": "GPL-3.0-or-later",
@@ -11,20 +11,20 @@
     ],
     "authors": [
         {
-            "name": "The Next Web BV",
-            "email": "support@thenextweb.com"
+            "name": "Carsten Jonstrup",
+            "email": "carsten@lenius.dk"
         }
     ],
     "require": {
         "ext-zip": "*",
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/filesystem": "^7.0|^8.0|^9.0|^10.0|^11.0"
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10|^11|^12.0",
+        "illuminate/filesystem": "^8.0|^9.0|^10|^11|^12.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.2",
-        "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0|^9.0",
-        "phpstan/phpstan": "^1.6",
-        "phpunit/phpunit": "^9.3|^10.0"
+        "orchestra/testbench": "^8.0|^9.0|^10|^11|^12.0",
+        "phpunit/phpunit": "^9.4|^10.1|^11.5"
     },
     "autoload": {
         "psr-4": {
@@ -34,10 +34,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Thenextweb\\PassGeneratorServiceProvider"
+                "Lenius\\PassGeneratorServiceProvider"
             ],
             "aliases": {
-                "PassGenerator": "Thenextweb\\Facades\\PassGenerator"
+                "PassGenerator": "Lenius\\Facades\\PassGenerator"
             }
         }
     },
